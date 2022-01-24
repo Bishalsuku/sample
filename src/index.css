@@ -1,13 +1,105 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: #090a13;
+  color: #fff;
 }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1700px;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+.header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header ul li {
+  margin-right: 2rem;
+}
+
+.header ul li:last-child {
+  margin-right: 0;
+}
+
+.banner {
+  padding: 3rem 0 5rem 0;
+  background: #111325;
+}
+
+.banner p {
+  position: relative;
+  font-size: 3rem;
+  max-width: 1700px;
+  margin: auto;
+}
+
+.banner p::after {
+  content: "";
+  position: absolute;
+  background: rgba(246, 160, 31, 0.15);
+  max-width: 10rem;
+  width: 100%;
+  margin-left: -6rem;
+  height: 100%;
+}
+
+.about-container {
+  max-width: 1700px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.about-container .info {
+  margin-top: -8rem;
+  z-index: 11;
+  max-width: 550px;
+  width: 100%;
+}
+
+.about-container .info p {
+  margin-bottom: 1rem;
+}
+
+.gallery-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/*# sourceMappingURL=index.css.map */
