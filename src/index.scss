@@ -58,7 +58,10 @@ body {
   margin: auto;
   display: flex;
   justify-content: flex-end;
+  height: 667px;
   .info {
+    background: #090a13;
+    padding: 2rem 1rem;
     margin-top: -8rem;
     z-index: 11;
     max-width: 550px;
@@ -75,6 +78,113 @@ body {
   align-items: center;
 }
 .gallery {
+  max-width: $max-width;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  .profile-desc {
+    background: #111325;
+    width: fit-content;
+  }
+}
+
+.footer {
+  background: #111325;
+  margin: 2rem 0 0 0;
+
+  .footer-wrapper {
+    max-width: $max-width;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 3rem 0;
+  }
+
+  .contact-info {
+    display: flex;
+    margin-bottom: 1rem;
+    p {
+      margin-left: 1rem;
+    }
+  }
+
+  .first-footer {
+    p {
+      margin-bottom: 3rem;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .sec-footer {
+    p {
+      margin-bottom: 3rem;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .third-footer {
+    align-self: baseline;
+    // align-items: flex-end;
+    p {
+      margin-bottom: 3rem;
+    }
+
+    button {
+      border: none;
+      padding: 0.5rem 5rem;
+      background: #f6a01f;
+      border-radius: 50px;
+    }
+  }
+}
+
+.foot {
+  background-color: #090a13;
+  padding: 1rem 0;
+
+  .foot-container {
+    position: relative;
+    max-width: $max-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .foot-img-container {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    width: 20px;
+  }
+
+  .foot-img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 0.8rem;
+    border-radius: 50%;
+    margin-left: 0.8rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover {
+      background-color: #f6a01f;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 }

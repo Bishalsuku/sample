@@ -9,6 +9,13 @@ import Rectangle5 from "./img/Rectangle4.png";
 import Rectangle6 from "./img/Rectangle5.png";
 import Rectangle7 from "./img/Rectangle6.png";
 import Rectangle8 from "./img/Rectangle7.png";
+import location_outline from "./img/location_outline.svg";
+import mail from "./img/mail.png";
+import phone from "./img/phone.png";
+import facebook from "./img/facebook.svg";
+import insta from "./img/insta.svg";
+import linkedin from "./img/linkedin.svg";
+import tweet from "./img/tweet.svg";
 
 const App = () => {
   return (
@@ -71,10 +78,17 @@ const App = () => {
       </div>
 
       <div className="gallery-name">
-        <p>Our Team</p>
+        <h2>Our Team</h2>
       </div>
       <div className="gallery">
-        <img src={Rectangle} alt="rectangle" />
+        <div className="first-image">
+          <img src={Rectangle} alt="rectangle" />
+          <div className="profile-desc">
+            <p>GP Adhikari</p>
+            <p>CEO / Founder / Senior Back-End</p>
+            <p> Developer / Designer</p>
+          </div>
+        </div>
         <img src={Rectangle1} alt="rectangle" />
         <img src={Rectangle2} alt="rectangle" />
         <img src={Rectangle3} alt="rectangle" />
@@ -83,6 +97,64 @@ const App = () => {
         <img src={Rectangle6} alt="rectangle" />
         <img src={Rectangle7} alt="rectangle" />
         <img src={Rectangle8} alt="rectangle" />
+      </div>
+      <div className="footer">
+        <div className="footer-wrapper">
+          <div>
+            <img src={logo} alt="logo" />
+            <div className="contact-info">
+              <img src={location_outline} alt="location_outline" />
+              <p>Bhaktapur, Nepal</p>
+            </div>
+            <div className="contact-info">
+              <img src={mail} alt="mail" />
+              <p>zprofs.company@gmail.com</p>
+            </div>
+            <div className="contact-info">
+              <img src={phone} alt="phone" />
+              <p>+977-9876543210</p>
+            </div>
+          </div>
+          <div className="first-footer">
+            <p>Quick Links</p>
+            <ul>
+              <li>Contact Us</li>
+              <li>Careers</li>
+              <li>Portfolio</li>
+            </ul>
+          </div>
+          <div className="sec-footer">
+            <p>Resources</p>
+            <ul>
+              <li>Privacy Policy</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+          <div className="third-footer">
+            <p>Get In Touch</p>
+            <button>Contact Us</button>
+          </div>
+        </div>
+        <div className="foot">
+          <div className="foot-container">
+            <p>Copyright &copy; 2021 Zpro . All Rights Reserved.</p>
+
+            <div className="foot-img-container">
+              <div className="foot-img-wrapper">
+                <img src={facebook} alt="facebook" />
+              </div>
+              <div className="foot-img-wrapper">
+                <img src={insta} alt="instagram" />
+              </div>
+              <div className="foot-img-wrapper">
+                <img src={linkedin} alt="linkedin" />
+              </div>
+              <div className="foot-img-wrapper">
+                <img src={tweet} alt="tweeter" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
